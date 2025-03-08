@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fadeIn {
+            animation: fadeIn 1s ease-out forwards;
+        }
+
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
+        .delay-400 { animation-delay: 0.4s; }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="flex justify-between items-center px-10 py-5 shadow-md">
+        <h1 class="text-2xl font-bold">TrackNBoost </h1>
+        <ul class="hidden md:flex space-x-6 text-gray-700">
+            <li><a href="index.html" class="hover:text-orange-500">Home</a></li>
+            <li><a href="about.html" class="hover:text-orange-500">About Us</a></li>
+            <li><a href="contact.html" class="hover:text-orange-500">Contact Us</a></li>
+        </ul>
+        <div class="space-x-3">
+            <a href="login.html" class="hover:text-orange-500"> <button class="border border-orange-500 px-4 py-2 rounded-md text-orange-500 hover:bg-orange-100">Login</button></a>
+            <a href="register.html" class="hover:text-orange-500"><button class="bg-orange-500 text-white px-4 py-2 rounded-md hover:bg-orange-600">Register</button></a>
+        </div>
+    </nav>
+
+   <!-- Features Section -->
+   <section class="max-w-7xl mx-auto py-16 px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+        
+    <!-- Feature 1 -->
+    <div class="bg-white p-6 rounded-lg shadow-lg opacity-0 animate-fadeIn delay-100 flex flex-col items-center h-[420px]">
+        <img src="dash.jpeg" alt="Responsive Dashboard" class="w-full h-48 object-cover rounded-t-lg">
+        <h3 class="text-xl font-bold mt-4">Responsive Dashboard</h3>
+        <p class="text-gray-600 mt-2 flex-grow">Our dashboard adapts seamlessly to any screen size, ensuring a smooth experience.</p>
+    </div>
+
+    <!-- Feature 2 -->
+    <div class="bg-white p-6 rounded-lg shadow-lg opacity-0 animate-fadeIn delay-200 flex flex-col items-center h-[420px]">
+        <img src="data.webp" alt="Easy Data Input" class="w-full h-48 object-cover rounded-t-lg">
+        <h3 class="text-xl font-bold mt-4">Easy Data Input</h3>
+        <p class="text-gray-600 mt-2 flex-grow">Quickly and accurately input sales data using intuitive entry forms.</p>
+    </div>
+
+    <!-- Feature 3 -->
+    <div class="bg-white p-6 rounded-lg shadow-lg opacity-0 animate-fadeIn delay-300 flex flex-col items-center h-[420px]">
+        <img src="csv.webp" alt="CSV Export" class="w-full h-48 object-cover rounded-t-lg">
+        <h3 class="text-xl font-bold mt-4">CSV Export</h3>
+        <p class="text-gray-600 mt-2 flex-grow">Export sales data to CSV with a few clicks for easy reporting.</p>
+    </div>
+
+    <!-- Feature 4 -->
+    <div class="bg-white p-6 rounded-lg shadow-lg opacity-0 animate-fadeIn delay-400 flex flex-col items-center h-[420px]">
+        <img src="analytics.webp" alt="Powerful Analytics" class="w-full h-48 object-cover rounded-t-lg">
+        <h3 class="text-xl font-bold mt-4">Powerful Analytics</h3>
+        <p class="text-gray-600 mt-2 flex-grow">Gain insights into sales performance with interactive analytics.</p>
+    </div>
+
+</section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <!-- Product Column -->
+            <div>
+                <h3 class="text-lg font-bold mb-4">Product</h3>
+                <ul class="text-gray-400 space-y-2">
+                    <li><a href="#" class="hover:text-white">Features</a></li>
+                    <li><a href="#" class="hover:text-white">Demo</a></li>
+                    <li><a href="#" class="hover:text-white">Pricing</a></li>
+                </ul>
+            </div>
+            
+            <!-- Company Column -->
+            <div>
+                <h3 class="text-lg font-bold mb-4">Company</h3>
+                <ul class="text-gray-400 space-y-2">
+                    <li><a href="#" class="hover:text-white">About Us</a></li>
+                    <li><a href="#" class="hover:text-white">Contact Us</a></li>
+                </ul>
+            </div>
+            
+            <!-- Support Column -->
+            <div>
+                <h3 class="text-lg font-bold mb-4">Support</h3>
+                <ul class="text-gray-400 space-y-2">
+                    <li><a href="#" class="hover:text-white">FAQ</a></li>
+                </ul>
+            </div>
+            
+            <!-- Subscribe Column -->
+            <div>
+                <h3 class="text-lg font-bold mb-4">Subscribe</h3>
+                <p class="text-gray-400 mb-4">
+                    Stay up to date with the latest news and updates from Thesalesoperator.
+                </p>
+                <div class="flex">
+                    <input type="email" placeholder="Enter your email"
+                        class="w-full p-2 rounded-l bg-gray-800 text-white focus:outline-none">
+                    <button class="bg-red-500 px-4 py-2 rounded-r hover:bg-red-600">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Footer Bottom -->
+        <div class="max-w-7xl mx-auto px-6 mt-10 border-t border-gray-700 pt-6 flex flex-col md:flex-row justify-between text-gray-400 text-sm">
+            <p>© 2025 Thesalesoperator. All rights reserved.</p>
+            <div class="flex space-x-4">
+                <a href="#" class="hover:text-white">Terms and Conditions</a>
+                <a href="#" class="hover:text-white">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

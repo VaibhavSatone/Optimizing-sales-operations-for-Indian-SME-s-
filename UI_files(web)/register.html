@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - The Sales Tracker</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex flex-col min-h-screen">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md px-10 py-4 flex justify-between items-center fixed w-full top-0 z-10">
+        <h1 class="text-2xl font-bold text-gray-900">TrackNBoost </h1>
+        <ul class="hidden md:flex space-x-6 text-gray-700">
+            <li><a href="index.html" class="hover:text-orange-500">Home</a></li>
+            <li><a href="about.html" class="hover:text-orange-500">About Us</a></li>
+            <li><a href="features.html" class="hover:text-orange-500">Features</a></li>
+            <li><a href="contact.html" class="hover:text-orange-500">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Register Form Section -->
+    <div class="flex flex-grow justify-center items-center mt-20">
+        <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
+            <h2 class="text-3xl font-semibold text-center text-gray-900 mb-6">Create an Account</h2>
+            
+            <form>
+                <div class="mb-4">
+                    <label class="block text-gray-700 font-medium">Full Name</label>
+                    <input type="text" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="mb-4">
+                    <label class="block text-gray-700 font-medium">Email</label>
+                    <input type="email" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500" placeholder="Enter your email" required>
+                </div>
+
+                <div class="mb-4">
+                    <label class="block text-gray-700 font-medium">Password</label>
+                    <input type="password" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500" placeholder="Create a password" required>
+                </div>
+
+                <div class="mb-4">
+                    <label class="block text-gray-700 font-medium">Confirm Password</label>
+                    <input type="password" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500" placeholder="Confirm your password" required>
+                </div>
+
+                <a href="login.html"><button class="w-full bg-orange-500 text-white py-3 rounded-lg hover:bg-orange-600 transition duration-300">Register</button></a>
+
+                <p class="text-gray-600 text-center mt-4">Already have an account? 
+                    <a href="login.html" class="text-orange-600 font-medium hover:underline">Login</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12 mt-10">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <h3 class="text-lg font-bold mb-4">Product</h3>
+                <ul class="text-gray-400 space-y-2">
+                    <li><a href="#" class="hover:text-white">Features</a></li>
+                    <li><a href="#" class="hover:text-white">Demo</a></li>
+                    <li><a href="#" class="hover:text-white">Pricing</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h3 class="text-lg font-bold mb-4">Company</h3>
+                <ul class="text-gray-400 space-y-2">
+                    <li><a href="#" class="hover:text-white">About Us</a></li>
+                    <li><a href="#" class="hover:text-white">Contact Us</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h3 class="text-lg font-bold mb-4">Support</h3>
+                <ul class="text-gray-400 space-y-2">
+                    <li><a href="#" class="hover:text-white">FAQ</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h3 class="text-lg font-bold mb-4">Subscribe</h3>
+                <p class="text-gray-400 mb-4">Stay updated with the latest news and offers.</p>
+                <div class="flex">
+                    <input type="email" placeholder="Enter your email" class="w-full p-2 rounded-l bg-gray-800 text-white focus:outline-none">
+                    <button class="bg-orange-500 px-4 py-2 rounded-r hover:bg-orange-600">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Footer Bottom -->
+        <div class="max-w-7xl mx-auto px-6 mt-10 border-t border-gray-700 pt-6 flex flex-col md:flex-row justify-between text-gray-400 text-sm">
+            <p>© 2025 The Sales Tracker. All rights reserved.</p>
+            <div class="flex space-x-4">
+                <a href="#" class="hover:text-white">Terms & Conditions</a>
+                <a href="#" class="hover:text-white">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
